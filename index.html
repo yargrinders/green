@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green House Menu</title>    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main>
+    <div class="accordion">
+      <div class="icon"><img src="icon/sun.png" alt="Sun" class="icon_32"></div>
+      <div class="title">
+        <h2>сніданки</i></h2>
+        <h3>breakfast</h3>
+      </div>
+    </div>
+      <div class="panel">
+        <div class="row">
+          <ul>
+            <li class="list"><p class="food_name">Каша вівсяна з молоком*</p><p class="heft">350</p><p class="price">35</p></li>
+            <li class="sublist"><p class="subtitle">Oatmeal parridge with milk*</p></li>
+            <li class="list"><p class="food_name">Омлет з сиром і помідорами</p><p class="heft">150</p><p class="price">47</p></li>
+            <li class="sublist"><p class="subtitle">Omelette with cheese and tomatoes</p></li>
+            <li class="list"><p class="food_name">Яєчня з беконом, помідорами чері та тостами</p><p class="heft">170/25</p><p class="price">49</p></li>
+            <li class="sublist"><p class="subtitle">Fried eggs with bacon, tomatos and toasts</p></li>
+            <li class="list"><p class="food_name">Сирники з варенням та сметаною</p><p class="heft">150/30/30</p><p class="price">42</p></li>
+            <li class="sublist"><p class="subtitle">Fried cheese with jam and sour</p></li>
+            <li class="list"><p class="food_name">Вафлі з арахісовою пастою</p><p class="heft">200</p><p class="price">57</p></li>
+            <li class="sublist"><p class="subtitle">Waffles with peanut butter and berries</p></li>
+            <li class="list"><p class="food_name">Вафлі з сиром та баликом</p><p class="heft">200</p><p class="price">67</p></li>
+            <li class="sublist"><p class="subtitle">Waffles with cheese and cured fillet</p></li>
+          </ul>
+        </div>
+      </div>
+      
+    <div class="accordion">
+      <div class="icon"><img src="icon/plus.png" alt="Plus" class="icon_22"></i></div>
+      <div class="title">
+        <h2>Додаткові інградіенти </h2>
+        <h3>Additive Ingredients</h3>
+      </div>
+    </div>
+      <div class="panel">
+        <div class="row">
+          <ul>
+            <li class="list"><p class="food_name">Ягоди</p><p class="heft">50</p><p class="price">15</p></li>
+            <li class="sublist"><p class="subtitle">Berries</p></li>
+            <li class="list"><p class="food_name">Горіхи</p><p class="heft">20</p><p class="price">15</p></li>
+            <li class="sublist"><p class="subtitle">Nuts</p></li>
+            <li class="list"><p class="food_name">Мед</p><p class="heft">30</p><p class="price">10</p></li>
+            <li class="sublist"><p class="subtitle">Honey</p></li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="accordion">
+      <div class="icon"><img src="icon/sandwich.png" alt="Sandwich" class="icon_42"></div>
+      <div class="title">
+        <h2>Сендвічі паніні</h2>
+        <h3>Panini</h3>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="row">
+        <ul>
+          <li class="list"><p class="food_name">Назва їжі</p><p class="heft">Вага</p><p class="price">Ціна</p></li>
+          <li class="sublist"><p class="subtitle">Name of food</p></li>
+        </ul>
+      </div>  
+    </div>  
+          
+    <div class="accordion">
+      <div class="icon"><img src="icon/sandwich.png" alt="Sandwich" class="icon_42"></div>
+      <div class="title">
+        <h2>Сендвічі паніні Philadelphia Green</h2>
+        <h3>Panini Philadelphia Green</h3>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="row">
+        <ul>
+          <li class="list"><p class="food_name">Назва їжі</p><p class="heft">Вага</p><p class="price">Ціна</p></li>
+          <li class="sublist"><p class="subtitle">Name of food</p></li>
+        </ul>
+      </div>  
+    </div>
+
+    <div class="accordion">
+      <div class="icon"><img src="icon/pasta.png" alt="Pasta" class="icon_42"></div>
+      <div class="title">
+        <h2>Пасти</h2>
+        <h3>Pasta</h3>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="row">
+        <ul>
+          <li class="list"><p class="food_name">Назва їжі</p><p class="heft">Вага</p><p class="price">Ціна</p></li>
+          <li class="sublist"><p class="subtitle">Name of food</p></li>
+        </ul>
+      </div>  
+    </div>
+     
+  </main>     
+  <footer>
+    <h3>отредактированно 9.10.2021</h3>
+  </footer>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
