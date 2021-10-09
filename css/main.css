@@ -11,6 +11,18 @@ h3 {
     margin: 0;
     font-size: 14px;
 }
+.yellow {    
+    background: #e2c085;
+}
+.orange {
+    background: #bb5936;
+}
+.blue {
+    background: #66a4b1;
+}
+.pink {
+    background: #8f516a;
+}
 p {
     margin: 0;
 }
@@ -71,7 +83,6 @@ footer {
 .accordion div:nth-child(1) {
     flex: 0 0 60px;
     min-height: 1.6em;
-    background: #e2c085;
 }
 .accordion div:nth-child(2) {
     padding: 8px 10px;
@@ -131,6 +142,11 @@ ul {
     flex: 0 0 0em;
     position: relative;
     top: 0px;
+}
+.red {
+    flex: 0 0 60px;
+    min-height: 1.6em;
+    background: #c24b4b;
 }
 /* LI DOTS END */
 .subtitle {
