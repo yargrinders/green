@@ -3,6 +3,10 @@
 *,*::before,*::after {
     box-sizing: border-box;
 }
+.wrapper {
+    max-width: 980px;
+    margin: auto;
+}
 h2 {
     margin: 0;
     font-size: 16px;
@@ -11,6 +15,10 @@ h3 {
     margin: 0;
     font-size: 14px;
 }
+p {
+    margin: 0;
+}
+/* Main Color */
 .yellow {    
     background: #e2c085;
 }
@@ -23,12 +31,9 @@ h3 {
 .pink {
     background: #8f516a;
 }
-p {
-    margin: 0;
-}
+/* END Main Color */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     margin: auto;
     background-color: #efefef;
 }
@@ -103,7 +108,7 @@ footer {
     transition: max-height 0.2s ease-out;
 }
 .row {
-    padding: 0 0 0 42px;
+    padding: 0px 10px 0px 1px;
 }
 /* LI DOTS */
 ul {
@@ -143,14 +148,26 @@ ul {
     position: relative;
     top: 0px;
 }
+.sublist_en {
+    font-size: 16px !important;
+    margin: 4px 0 0 0;
+}
+.food_name_en {
+    font-size: 16px;
+    font-style: italic;
+    margin: 4px 0 0 0;
+}
 .red {
     flex: 0 0 60px;
     min-height: 1.6em;
     background: #c24b4b;
 }
 /* LI DOTS END */
-.subtitle {
+
+.ingredients {
     font-size: 14px !important;
+    font-style: italic;
+    color: chartreuse;
 }  
 .food_name:after {
     content: '';
@@ -158,6 +175,25 @@ ul {
     flex:1; 
     margin: 4px; 
 }
+
+/* TEST Style */
+.description {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+.description p {
+    margin: 2px 0;
+}
+.description p:nth-child(1) {
+    font-size: 14px;
+}
+.description p:nth-child(2) {
+    font-size: 14px;
+    font-style: italic;
+}
+/* END TEST Style */
+
 @media (min-width: 992px) and (max-width: 1199px) {
     h2 {
         font-size: 16px;
@@ -165,19 +201,12 @@ ul {
     h3 {
         font-size: 14px;
     }
-    .subtitle {
+    .sublist_en {
         font-size: 14px !important;
     } 
 }
 @media (max-width:896px) {
-    h2 {
-        font-size: 16px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-    main {
-        margin: 0px 0px;
-        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
-    }
+    .sublist_en {
+        font-size: 14px !important;
+    } 
 }
